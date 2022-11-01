@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    color: #F5F2DC;
+    background: #009494;
+}
+
+.navbar{
+    background: #00585E;
+    padding: 1.5em;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-li{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+.navbar-li a{
+    text-decoration: none;
+    color: #f5f2dcbf;
+}
+.main{
+    background: #00585E;
+    margin: 2em;
+    padding: 4em;
+    border-radius: 5em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: justify;
+}
+.imagen{
+    width: 80%;
+    height: 17em;
+    padding: auto;
+    margin: auto;
+}
+.navbar-li a:hover{
+    color: #ffffffdb;
+    text-decoration: underline;
+}
+.navbar-li a:active {
+    color: #ffffff;
+}
+.main-text{
+    margin-right: 3em;
+}
+
+
+.tarjetas{
+    margin-top: 5em;
+    grid-template-columns: repeat(2,50%);
+    display: grid;
+    
+}
+.tarjeta{
+    background: #00585E;
+    border-radius: 5rem;
+    padding: auto;
+    margin: auto;
+    padding-bottom: 5px;
+    width: 60%;
+    height: 21rem;
+    padding: 3rem;
+    text-align: justify;
+    box-shadow: 1em -16px teal;
+
+}
+.tarjeta h1{
+    text-align: center;
+}
+.boton{
+    width:110px;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    background:#FF5729;
+    border: none;
+    font-size: medium;
+    text-align:center;
+    color: #000000;
+    text-decoration: double;
+
+}
+.boton:active{
+    background: #ff57299f;
+}
+.pie{
+    background: border-box #454445;
+    margin-top: 3em;
+    padding: 1em;
+}
+.pie p{
+    margin-bottom: 1em;
+    border-bottom: solid 1px #ffffff;
+}
+.peru{
+    text-align: center;
+}
+
+@media screen and (max-width:700px){
+    .main
+    {
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        text-align: justify;
+    }
+    .navbar{
+        display: block;
+    }
+    .icon{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .navbar-li{
+        display: block;
+        border-bottom: 1px #F5F2DC solid;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 15px;
+
+    }
+    .main-text{
+        margin: 0%;
+        margin-top: 20px;
+    }
+    .tarjetas{
+        grid-template-columns: repeat(1,90%);
+        display: block;
+
+    }
+    .tarjeta{
+        margin-bottom: 5em;
+    }
+}
