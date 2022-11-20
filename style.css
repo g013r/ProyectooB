@@ -79,7 +79,7 @@ body{
     width:110px;
     display: block;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background:#FF5729;
     border: none;
     font-size: medium;
@@ -95,6 +95,7 @@ body{
     background: border-box #454445;
     margin-top: 3em;
     padding: 1em;
+    
 }
 .pie p{
     margin-bottom: 1em;
